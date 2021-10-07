@@ -7,7 +7,7 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter import filedialog # from tkinter importing file dialog box
 import tkinter.messagebox as mbox # for displaying the dialog box
-from PIL import Image, ImageTk, ImageDraw
+from pil import Image, ImageTk, ImageDraw
 import os
 import cv2
 
@@ -23,7 +23,7 @@ edge = ""
 # Function defined Selecting the image from the local system
 def img_choose():
     global onlyfilename, fullfilename, edge
-    from PIL import Image, ImageTk, ImageDraw # we only import Image not ImageTk, beacause we are nit displaying in file, just choosing
+    from pil import Image, ImageTk, ImageDraw # we only import Image not ImageTk, beacause we are nit displaying in file, just choosing
     global img # we need to defined this img global, because we have to use in whole window
 
     # initialdir is C:, which is our window folder
